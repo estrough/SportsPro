@@ -118,7 +118,6 @@
     <Compile Include="CustomerDisplay.aspx.designer.cs">
       <DependentUpon>CustomerDisplay.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\Customer.cs" />
     <Compile Include="Models\CustomerList.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

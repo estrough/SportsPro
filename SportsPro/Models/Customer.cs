@@ -18,9 +18,12 @@ namespace SportsPro.Models
 
         public string ContactDisplay()
         {
-            Customer selectedCustomer;
-            selectedCustomer = (Customer)System.Web.HttpContext.Current.Session["Contact"];
-            return selectedCustomer.Name + ":" + selectedCustomer.Phone + ", " + selectedCustomer.Email;
+            //Customer selectedCustomer;
+            //selectedCustomer = (Customer)System.Web.HttpContext.Current.Session["Contact"];
+            return //selectedCustomer.
+            Name + ":" + //selectedCustomer.
+            Phone + ", " + //selectedCustomer.
+            Email;
         }
     }
 }

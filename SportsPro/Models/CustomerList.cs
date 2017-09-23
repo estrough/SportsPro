@@ -44,8 +44,11 @@ namespace SportsPro.Models
 
         public void AddItem(Customer customer)
         {
-            Customer c = new Customer();
-            customerItems.Add(c);
+            var currentList = (CustomerList)HttpContext.Current.Session["Contact"];
+            currentList.customerItems.Add(customer);
+            HttpContext.Current.Session["Contact"] = currentList;
+            //Customer c = new Customer();
+            //customerItems.Add(c);
         }
 
         public void RemoveAt(int index)
