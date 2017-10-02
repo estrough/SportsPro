@@ -40,8 +40,8 @@
                         <div class="col-sm-12"><label class ="col-sm-5">Phone:</label><asp:Label ID="lblPhone" runat="server"></asp:Label></div></div>
                     <div class="form-group">
                         <div class="col-sm-12"><label class ="col-sm-5">Email:</label><asp:Label ID="lblEmail" runat="server"></asp:Label></div></div>
-                    <div class ="form-group"><asp:Button ID="btnAdd" runat="server" Text="Add to Contact List" OnClick="btnAdd_Click" BackColor="#6666FF" Font-Names="Arial" ForeColor="White" />
-         <asp:Button ID="btnDisplay" runat="server" Text="Display Contact List" OnClick="btnDisplay_Click" BackColor="#6666FF" ForeColor="White" /></div>
+                    <div class ="form-group"><asp:Button ID="btnAdd" runat="server" Text="Add to Contact List" OnClick="btnAdd_Click" BackColor="#6666FF" Font-Names="Arial" ForeColor="White" CssClass="btn" />
+         <asp:Button ID="btnDisplay" runat="server" Text="Display Contact List" OnClick="btnDisplay_Click" BackColor="#6666FF" ForeColor="White" CssClass="btn" /></div>
                     
                     <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [Customers] ORDER BY [Name]"></asp:SqlDataSource>
                     

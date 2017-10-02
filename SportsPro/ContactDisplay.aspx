@@ -29,13 +29,13 @@
         </div>
         <div class="col-sm-6">
             <div class="form-group">
-                <div class="col-sm-12"><asp:Button ID="btnSelect" runat="server" Text="Select Additional Customers" OnClick="btnSelect_Click" BackColor="#6666FF" ForeColor="White" />
+                <div class="col-sm-12"><asp:Button ID="btnSelect" runat="server" Text="Select Additional Customers" OnClick="btnSelect_Click" BackColor="#6666FF" ForeColor="White" CssClass="btn" />
 
                 </div>
-                <div class="col-sm-12"><asp:Button ID="btnRemove" runat="server" Text="Remove Contact" OnClick="btnRemove_Click" BackColor="#6666FF" ForeColor="White" />
+                <div class="col-sm-12"><asp:Button ID="btnRemove" runat="server" Text="Remove Contact" OnClick="btnRemove_Click" BackColor="#6666FF" ForeColor="White" CssClass="btn" />
 
                 </div>
-                <div class="col-sm-12"><asp:Button ID="btnEmpty" runat="server" Text="Empty List" OnClick="btnEmpty_Click" BackColor="#6666FF" ForeColor="White" />
+                <div class="col-sm-12"><asp:Button ID="btnEmpty" runat="server" Text="Empty List" OnClick="btnEmpty_Click" BackColor="#6666FF" ForeColor="White" CssClass="btn" />
 
                 </div>
             </div>
