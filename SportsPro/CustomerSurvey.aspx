@@ -49,7 +49,7 @@
             <div class="form-group">
                 <div class="col-sm-12">
 
-                    <asp:ListBox ID="lstIncidents" runat="server" Width="728px"></asp:ListBox>
+                    <asp:ListBox ID="lstIncidents" runat="server" Width="728px" AutoPostBack="True"></asp:ListBox>
 
                 </div>
             </div>
@@ -125,6 +125,7 @@
             <div class="form-group">
                 <div class="col-sm-12">
                     <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn" OnClick="btnSubmit_Click" Enabled="False" />
+                    <asp:Label ID="lblIncident" runat="server"></asp:Label>
                 </div>
             </div>
         </div>

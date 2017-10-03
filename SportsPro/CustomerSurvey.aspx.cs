@@ -26,6 +26,7 @@ namespace SportsPro
                 this.getSelectedCustomer();
                 if (lstIncidents.Items.Count > 1)
                 {
+
                     this.EnablePage();
                     lstIncidents.SelectedIndex = 1;
                 }
@@ -44,7 +45,7 @@ namespace SportsPro
                 txtComment.Enabled = true;
                 btnSubmit.Enabled = true;
 
-                
+
             }
         }
         private void getSelectedCustomer()
@@ -89,9 +90,16 @@ namespace SportsPro
             {
                 contactMethod = false;
             }
+            if (lstIncidents.SelectedIndex == 0)
+            {
+                lblIncident.Text = "Select an incident";
+            }
+            else
+            {
+                Session.Add("contactMethod", contactMethod);
+                Response.Redirect("~/SurveyComplete.aspx");
 
-            Session.Add("contactMethod", contactMethod);
-            Response.Redirect("~/SurveyComplete.aspx");
+            }
         }
     }
 }
