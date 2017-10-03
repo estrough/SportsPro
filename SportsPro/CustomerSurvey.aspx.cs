@@ -26,12 +26,27 @@ namespace SportsPro
                 this.getSelectedCustomer();
                 if (lstIncidents.Items.Count > 1)
                 {
-                    
+                    this.EnablePage();
                     lstIncidents.SelectedIndex = 1;
                 }
             }
         }
+        private void EnablePage()
+        {
+            if (Page.IsValid)
+            {
+                lstIncidents.Enabled = true;
+                radlContact.Enabled = true;
+                chkContact.Enabled = true;
+                rdlResolution.Enabled = true;
+                rdlResponse.Enabled = true;
+                rdlTech.Enabled = true;
+                txtComment.Enabled = true;
+                btnSubmit.Enabled = true;
 
+                
+            }
+        }
         private void getSelectedCustomer()
         {
             DataView incidentTable = (DataView)SqlDataSource1.Select(DataSourceSelectArguments.Empty);

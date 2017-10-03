@@ -62,7 +62,7 @@
                         <tr>
                             <td class="auto-style1">Response Time: </td>
                             <td>
-                                <asp:RadioButtonList ID="rdlResponse" runat="server" RepeatColumns="4" Width="706px" Height="18px">
+                                <asp:RadioButtonList ID="rdlResponse" runat="server" RepeatColumns="4" Width="706px" Height="18px" Enabled="False">
                                     <asp:ListItem Value="1">Not Satisfied</asp:ListItem>
                                     <asp:ListItem Value="2">Somewhat Satisfied</asp:ListItem>
                                     <asp:ListItem Value="3">Satisfied</asp:ListItem>
@@ -74,7 +74,7 @@
                         <tr>
                             <td class="auto-style1">Technician Efficency: </td>
                             <td>
-                                <asp:RadioButtonList ID="rdlTech" runat="server" RepeatColumns="4" Width="706px">
+                                <asp:RadioButtonList ID="rdlTech" runat="server" RepeatColumns="4" Width="706px" Enabled="False">
                                     <asp:ListItem Value="1">Not Satisfied</asp:ListItem>
                                     <asp:ListItem Value="2">Somewhat Satisfied</asp:ListItem>
                                     <asp:ListItem Value="3">Satisfied</asp:ListItem>
@@ -86,7 +86,7 @@
                         <tr>
                             <td class="auto-style1">Problem Resolution: </td>
                             <td>
-                                <asp:RadioButtonList ID="rdlResolution" runat="server" RepeatColumns="4" Width="706px">
+                                <asp:RadioButtonList ID="rdlResolution" runat="server" RepeatColumns="4" Width="706px" Enabled="False">
                                     <asp:ListItem Value="1">Not Satisfied</asp:ListItem>
                                     <asp:ListItem Value="2">Somewhat Satisfied</asp:ListItem>
                                     <asp:ListItem Value="3">Satisfied</asp:ListItem>
@@ -105,7 +105,7 @@
                 <div class="col-sm-12">
 
                     <asp:Label ID="Label1" runat="server" Height="2px" Text="Additional Comments:"></asp:Label>
-                    <asp:TextBox ID="txtComment" runat="server" Height="94px" TextMode="MultiLine" Width="459px"></asp:TextBox>
+                    <asp:TextBox ID="txtComment" runat="server" Height="94px" TextMode="MultiLine" Width="459px" Enabled="False"></asp:TextBox>
 
                 </div>
             </div>
@@ -113,8 +113,8 @@
         <div class ="row">
             <div class ="form-group">
                 <div class="col-sm-12">
-                    <asp:CheckBox ID="chkContact" runat="server" Text="Please contact me to discuss this incident" />
-                    <asp:RadioButtonList ID="radlContact" runat="server">
+                    <asp:CheckBox ID="chkContact" runat="server" Text="Please contact me to discuss this incident" Enabled="False" />
+                    <asp:RadioButtonList ID="radlContact" runat="server" Enabled="False">
                         <asp:ListItem>Contact by email</asp:ListItem>
                         <asp:ListItem>Contact by phone</asp:ListItem>
                     </asp:RadioButtonList>
@@ -124,7 +124,7 @@
         <div class ="row">
             <div class="form-group">
                 <div class="col-sm-12">
-                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn" OnClick="btnSubmit_Click" />
+                    <asp:Button ID="btnSubmit" runat="server" Text="Submit" CssClass="btn" OnClick="btnSubmit_Click" Enabled="False" />
                 </div>
             </div>
         </div>
